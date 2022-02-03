@@ -185,6 +185,7 @@
     <Compile Include="Models\tTentPhoto.cs">
       <DependentUpon>dbCamp.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModel\PreOrderInfoViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -213,8 +214,8 @@
     <Content Include="Views\Member\Register.cshtml" />
     <Content Include="Views\Home\search.cshtml" />
     <Content Include="Views\Shared\_LoginFloatPartial.cshtml" />
-    <Content Include="Views\CampOrder\GenerateOrder.cshtml" />
     <Content Include="Views\TempTentList\ListTent.cshtml" />
+    <Content Include="Views\CampOrder\GenerateOrder.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -224,6 +225,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\Factory\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

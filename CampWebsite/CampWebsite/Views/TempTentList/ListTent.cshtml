@@ -61,7 +61,7 @@
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.fTentID }) |
             @Html.ActionLink("Details", "Details", new { id=item.fTentID }) |
-            @Html.ActionLink("Order", "GenerateOrder", "CampOrder", new { id=item.fTentID },null)
+            @Html.ActionLink("Order", "GenerateOrder", "CampOrder", new { TentID = item.fTentID },null)
         </td>
     </tr>
 }

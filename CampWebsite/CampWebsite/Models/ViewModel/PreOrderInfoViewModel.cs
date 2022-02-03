@@ -9,6 +9,11 @@ namespace CampWebsite.Models.ViewModel
     {
         public tMember tMember { get; set; }
         public tTent tTent { get; set; }
-        public tOrder tOrder { get; set; }
+        public System.DateTime fCheckinDate { get; set; }
+        public string fPhone { get; set; }
+        public string fOrderComment { get; set; }
+        public int fOrderPrice { get; set; }
+
+
     }
 }
