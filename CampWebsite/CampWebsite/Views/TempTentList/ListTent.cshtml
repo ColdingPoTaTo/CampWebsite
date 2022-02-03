@@ -1,0 +1,69 @@
+﻿@model IEnumerable<CampWebsite.Models.tTent>
+
+@{
+    ViewBag.Title = "ListTent";
+}
+
+<h2>ListTent</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fTentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fTentCategory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fTentPeople)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fTentPriceWeekday)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fTentPriceWeekend)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fTendPriceHoliday)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tCampsite.fCampsiteName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fTentName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fTentCategory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fTentPeople)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fTentPriceWeekday)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fTentPriceWeekend)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fTendPriceHoliday)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tCampsite.fCampsiteName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.fTentID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.fTentID }) |
+            @Html.ActionLink("Order", "GenerateOrder", "CampOrder", new { id=item.fTentID },null)
+        </td>
+    </tr>
+}
+
+</table>

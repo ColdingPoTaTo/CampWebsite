@@ -133,8 +133,10 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CampListController.cs" />
+    <Compile Include="Controllers\CampOrderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Controllers\TempTentListController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -211,6 +213,8 @@
     <Content Include="Views\Member\Register.cshtml" />
     <Content Include="Views\Home\search.cshtml" />
     <Content Include="Views\Shared\_LoginFloatPartial.cshtml" />
+    <Content Include="Views\CampOrder\GenerateOrder.cshtml" />
+    <Content Include="Views\TempTentList\ListTent.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
