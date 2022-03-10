@@ -471,7 +471,7 @@
         for (var time in date_array) {
             if (date_array[time] < now.getTime()) {
                 let index = date_array.indexOf(date_array[time]);
-                //nowDate.children[index].classList.add("calendar-unavailable");
+                nowDate.children[index].classList.add("calendar-unavailable"); //控制今天以前的日期能不能被點選
             }
         }
     }
